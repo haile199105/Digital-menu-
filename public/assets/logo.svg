@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Outer Metallic Gold/Bronze Gradient -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="30%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#b38728" />
+      <stop offset="70%" stop-color="#fbf5b7" />
+      <stop offset="100%" stop-color="#8a631e" />
+    </linearGradient>
+
+    <!-- Inner Dark Espresso Gradient -->
+    <radialGradient id="darkRing" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#2a221b" />
+      <stop offset="85%" stop-color="#18130f" />
+      <stop offset="100%" stop-color="#0f0c0a" />
+    </radialGradient>
+
+    <!-- Subtle Inner Shield Drop Shadow -->
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Text Paths for Arched Lettering -->
+    <!-- Top Arc for 'Rome 1960' -->
+    <path id="topTextArc" d="M 92 250 A 158 158 0 0 1 408 250" fill="none" />
+    <!-- Bottom Arc for 'Cafe' -->
+    <path id="bottomTextArc" d="M 408 250 A 158 158 0 0 1 92 250" fill="none" />
+  </defs>
+
+  <!-- Base Outer Ring Shadow -->
+  <circle cx="250" cy="250" r="240" fill="#0c0a08" />
+
+  <!-- Outer Bronze/Gold Border -->
+  <circle cx="250" cy="250" r="236" fill="url(#goldRim)" />
+  <circle cx="250" cy="250" r="226" fill="url(#darkRing)" />
+
+  <!-- Inner Bronze/Gold Separator Ring -->
+  <circle cx="250" cy="250" r="162" fill="url(#goldRim)" />
+  <circle cx="250" cy="250" r="156" fill="#ffffff" filter="url(#badgeShadow)" />
+
+  <!-- TOP ARCHED TEXT: Rome 1960 -->
+  <text fill="#ffffff" font-family="'Plus Jakarta Sans', 'Arial Rounded MT Bold', 'Montserrat', sans-serif" font-size="34" font-weight="900" letter-spacing="3.5">
+    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+      Rome 1960
+    </textPath>
+  </text>
+
+  <!-- BOTTOM ARCHED TEXT: Cafe -->
+  <text fill="#ffffff" font-family="'Plus Jakarta Sans', 'Arial Rounded MT Bold', 'Montserrat', sans-serif" font-size="36" font-weight="900" letter-spacing="8">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+      Cafe
+    </textPath>
+  </text>
+
+  <!-- FLANKING COFFEE BEANS -->
+  <!-- Left Coffee Bean (at 9 o'clock) -->
+  <g transform="translate(68, 250) rotate(-25) scale(0.95)">
+    <!-- Bean Body -->
+    <ellipse cx="0" cy="0" rx="19" ry="14" fill="#ffffff" />
+    <!-- Center S-split curve -->
+    <path d="M -17 0 C -8 7, 8 -7, 17 0 C 8 -3, -8 3, -17 0 Z" fill="#18130f" />
+  </g>
+
+  <!-- Right Coffee Bean (at 3 o'clock) -->
+  <g transform="translate(432, 250) rotate(25) scale(0.95)">
+    <!-- Bean Body -->
+    <ellipse cx="0" cy="0" rx="19" ry="14" fill="#ffffff" />
+    <!-- Center S-split curve -->
+    <path d="M -17 0 C -8 -7, 8 7, 17 0 C 8 3, -8 -3, -17 0 Z" fill="#18130f" />
+  </g>
+
+  <!-- ================= INNER CIRCLE CONTENT ================= -->
+  <!-- 5 ARCHED STARS AT TOP -->
+  <!-- Star 1 (Far Left) -->
+  <polygon points="176,138 180,147 190,147 182,153 185,162 176,156 167,162 170,153 162,147 172,147" fill="#18130f" transform="scale(0.85) translate(30, 20)" />
+  <!-- Star 2 (Mid Left) -->
+  <polygon points="208,122 212,131 222,131 214,137 217,146 208,140 199,146 202,137 194,131 204,131" fill="#18130f" transform="scale(0.85) translate(35, 14)" />
+  <!-- Star 3 (Center Apex) -->
+  <polygon points="250,116 254,125 264,125 256,131 259,140 250,134 241,140 244,131 236,125 246,125" fill="#18130f" transform="scale(0.88) translate(34, 12)" />
+  <!-- Star 4 (Mid Right) -->
+  <polygon points="292,122 296,131 306,131 298,137 301,146 292,140 283,146 286,137 278,131 288,131" fill="#18130f" transform="scale(0.85) translate(43, 14)" />
+  <!-- Star 5 (Far Right) -->
+  <polygon points="324,138 328,147 338,147 330,153 333,162 324,156 315,162 318,153 310,147 320,147" fill="#18130f" transform="scale(0.85) translate(48, 20)" />
+
+  <!-- LEFT BANNER: ROME with top and bottom horizontal bars -->
+  <g id="bannerRome">
+    <line x1="125" y1="218" x2="210" y2="218" stroke="#18130f" stroke-width="3.5" stroke-linecap="round" />
+    <text x="167" y="240" font-family="'Plus Jakarta Sans', 'Arial Rounded MT Bold', 'Montserrat', sans-serif" font-size="20" font-weight="900" fill="#18130f" text-anchor="middle" letter-spacing="3">ROME</text>
+    <line x1="125" y1="248" x2="210" y2="248" stroke="#18130f" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- RIGHT BANNER: 1960 with top and bottom horizontal bars -->
+  <g id="banner1960">
+    <line x1="285" y1="218" x2="370" y2="218" stroke="#18130f" stroke-width="3.5" stroke-linecap="round" />
+    <text x="328" y="240" font-family="'Plus Jakarta Sans', 'Arial Rounded MT Bold', 'Montserrat', sans-serif" font-size="20" font-weight="900" fill="#18130f" text-anchor="middle" letter-spacing="2.5">1960</text>
+    <line x1="285" y1="248" x2="370" y2="248" stroke="#18130f" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- ABEBE BIKILA VICTORIOUS MARATHON RUNNER FIGURE -->
+  <g id="abebeBikilaRunner" fill="#201a15">
+    <!-- Head and Neck -->
+    <circle cx="250" cy="152" r="13" />
+    <path d="M 245 162 L 255 162 L 257 172 L 243 172 Z" />
+
+    <!-- Outstretched Victorious Left Arm -->
+    <path d="M 238 174 C 215 178, 175 190, 138 190 C 131 190, 131 182, 137 180 C 172 170, 215 166, 236 170 Z" />
+    <!-- Left Hand -->
+    <circle cx="136" cy="184" r="5" />
+
+    <!-- Outstretched Victorious Right Arm -->
+    <path d="M 262 174 C 280 166, 305 158, 322 170 C 328 174, 332 170, 328 162 C 322 148, 316 150, 312 154 C 298 160, 275 166, 264 170 Z" />
+    <!-- Right Raised Hand / Fingers -->
+    <path d="M 324 165 C 330 160, 333 150, 327 148 C 324 148, 320 155, 321 162 Z" />
+
+    <!-- Torso / Running Singlet -->
+    <path d="M 233 172 C 230 195, 230 220, 230 238 L 270 238 C 270 220, 270 195, 267 172 C 260 174, 240 174, 233 172 Z" fill="#18130f" />
+
+    <!-- Athlete Bib Number 11 on Chest -->
+    <text x="250" y="215" font-family="'Plus Jakarta Sans', 'Arial', sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">11</text>
+
+    <!-- White Waistband / Belt Trim -->
+    <rect x="230" y="234" width="40" height="4" fill="#ffffff" />
+
+    <!-- Running Shorts -->
+    <path d="M 230 238 L 270 238 L 274 272 L 256 272 L 250 256 L 244 272 L 226 272 Z" fill="#18130f" />
+
+    <!-- Muscular Front/Left Leg (Trailing & Ground Contact) -->
+    <!-- Left Thigh & Knee -->
+    <path d="M 232 272 C 232 290, 235 310, 238 328 C 242 328, 248 310, 248 272 Z" />
+    <!-- Left Calf & Ankle & Barefoot -->
+    <path d="M 238 328 C 238 350, 240 372, 240 388 C 236 392, 234 397, 245 398 C 249 398, 247 388, 246 384 C 246 368, 245 348, 244 328 Z" />
+
+    <!-- Right Leg (Bent back in running stride) -->
+    <!-- Right Thigh & Knee lifted backward -->
+    <path d="M 256 272 C 260 286, 268 300, 276 308 C 280 304, 280 292, 272 272 Z" />
+    <!-- Right Lower Leg & Lifted Barefoot -->
+    <path d="M 276 308 C 276 316, 280 326, 286 336 C 290 338, 292 334, 290 326 C 284 316, 280 308, 276 308 Z" />
+    <path d="M 286 332 C 288 335, 294 340, 292 344 C 288 346, 284 340, 284 335 Z" />
+  </g>
+
+  <!-- DYNAMIC RUNNING TRACK / BAREFOOT MOTION SWOOSHES -->
+  <g stroke="#18130f" fill="none" stroke-linecap="round">
+    <path d="M 190 382 C 205 402, 275 418, 335 385" stroke-width="5" />
+    <path d="M 205 392 C 230 412, 280 422, 325 396" stroke-width="3" />
+    <path d="M 225 402 C 245 418, 278 424, 310 405" stroke-width="2" />
+  </g>
+</svg>

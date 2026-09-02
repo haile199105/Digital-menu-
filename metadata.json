@@ -1,0 +1,6 @@
+{
+  "name": "ROME 1960 CAFE - Digital Menu System",
+  "description": "Modern, elegant, mobile-first digital restaurant menu and management system for ROME 1960 CAFE with instant QR code access, live availability toggles, and rich item details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
