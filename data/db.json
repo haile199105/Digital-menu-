@@ -2,16 +2,16 @@
   "restaurant": {
     "id": "rome-1960-cafe",
     "name": "ROME 1960 CAFE",
-    "tagline": "Taste. Tradition. Experience.",
-    "description": "Welcome to ROME 1960 CAFE. Honoring the historic 1960 Rome Olympic victory of legendary Ethiopian barefoot marathoner Abebe Bikila, we bring together authentic Italian culinary artistry and Ethiopia's world-renowned coffee heritage.",
-    "logo_url": "/assets/logo.svg",
+    "tagline": "A premium cafe and restaurant experience in the heart of Hawassa.",
+    "description": "Rome 1960 Cafe combines fast-food favorites with authentic Ethiopian coffee culture. From crispy fried chicken and gourmet pizzas to freshly brewed espresso and traditional macchiatos, we offer a warm, welcoming dining experience in the heart of Hawassa.",
+    "logo_url": "https://i.postimg.cc/RhM3FM06/images.jpg",
     "cover_url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&auto=format&fit=crop&q=80",
-    "phone": "+251 91 123 4567",
-    "whatsapp": "+251 91 123 4567",
+    "phone": "+251 933615101",
+    "whatsapp": "+251 938245346",
     "email": "info@rome1960cafe.com",
-    "address": "Bole Road, Near Medhanialem Square, Addis Ababa, Ethiopia",
-    "maps_url": "https://maps.google.com/?q=Bole+Road+Addis+Ababa",
-    "opening_hours": "Monday – Sunday: 7:00 AM – 11:00 PM",
+    "address": "Welde Amanuel street Werku Buche bldg, Hawassa, Ethiopia",
+    "maps_url": "https://maps.app.goo.gl/gZ4DA2G4HQGgDg1k6?g_st=ac",
+    "opening_hours": "Daily: 7:00 AM – 10:00 PM",
     "currency": "ETB",
     "wifi_name": "Rome1960_Guest",
     "wifi_password": "rome1960taste",
@@ -19,7 +19,7 @@
     "facebook_url": "https://facebook.com",
     "telegram_url": "https://t.me",
     "created_at": "2026-08-31T13:37:08.462Z",
-    "updated_at": "2026-08-31T13:37:08.463Z"
+    "updated_at": "2026-09-02T05:53:17.192Z"
   },
   "categories": [
     {
