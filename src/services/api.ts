@@ -44,12 +44,15 @@ export const api = {
     try {
       const res = await fetch('/api/restaurant');
       if (res.ok) {
-        let data = await res.json();
-        if (data.logo_url && data.logo_url.includes('images.unsplash.com/photo-1559925393')) {
-          data.logo_url = '/assets/logo.svg';
+        const ct = res.headers.get('content-type');
+        if (ct && ct.includes('application/json')) {
+          let data = await res.json();
+          if (data.logo_url && data.logo_url.includes('images.unsplash.com/photo-1559925393')) {
+            data.logo_url = '/assets/logo.svg';
+          }
+          setLocalData(STORAGE_KEYS.RESTAURANT, data);
+          return data;
         }
-        setLocalData(STORAGE_KEYS.RESTAURANT, data);
-        return data;
       }
     } catch (e) {
       // Fallback to local
@@ -95,9 +98,12 @@ export const api = {
     try {
       const res = await fetch('/api/categories');
       if (res.ok) {
-        const data = await res.json();
-        setLocalData(STORAGE_KEYS.CATEGORIES, data);
-        return data;
+        const ct = res.headers.get('content-type');
+        if (ct && ct.includes('application/json')) {
+          const data = await res.json();
+          setLocalData(STORAGE_KEYS.CATEGORIES, data);
+          return data;
+        }
       }
     } catch (e) {
       // Fallback
@@ -214,9 +220,12 @@ export const api = {
     try {
       const res = await fetch('/api/menu-items');
       if (res.ok) {
-        const data = await res.json();
-        setLocalData(STORAGE_KEYS.MENU_ITEMS, data);
-        return data;
+        const ct = res.headers.get('content-type');
+        if (ct && ct.includes('application/json')) {
+          const data = await res.json();
+          setLocalData(STORAGE_KEYS.MENU_ITEMS, data);
+          return data;
+        }
       }
     } catch (e) {
       // Fallback
